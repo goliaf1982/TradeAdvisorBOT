@@ -1,0 +1,21 @@
+# Golang
+bin/
+*.exe
+*.test
+*.out
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# DB dump
+*.sql
+*.dump
+
+# Env files
+.env
+.env.*
