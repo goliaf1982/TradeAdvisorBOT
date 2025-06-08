@@ -37,6 +37,8 @@ func main() {
                 continue
             }
 
+	    _, err := database.GetDB().Exec(`INSERT INTO prices (symbol, price) VALUES ($1, $2)`, symbol, price)
+
             if err := database.GetDB().Exec(
                 `INSERT INTO market_data(symbol, price) VALUES($1, $2)`, symbol, price,
             ); err != nil {
